@@ -434,14 +434,15 @@ export default function Home() {
         <p
           className="animate-fade-up delay-200"
           style={{
-            color: "#FFFFFF", fontSize: "20px",
-            letterSpacing: "0px", lineHeight: "34px",
+            color: "#FFFFFF", fontSize: "18px",
+            letterSpacing: "0px", lineHeight: "30px",
             fontFamily: "'Urbanist', sans-serif",
             fontWeight: 400,
             marginBottom: "4px",
+            opacity: 1,
           }}
         >
-          Turn your past performance into future dominance with trend-aligned ideas and strategic refinements. Bombon orchestrates your entire content workflow, transforming unique perspectives into high-impact growth.
+          Turn past insights and current trends into high-impact growth. Bombon intelligently orchestrates your entire content workflow.
         </p>
 
         {/* Form */}
