@@ -1,13 +1,13 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "ContentOS — AI-Powered Content Orchestration",
+  title: "BOMBON — The Sweet Spot for Content",
   description:
-    "Analyze your unique voice. Repurpose your media. Automate your scheduling. Join the waitlist for the AI OS that content creators have been waiting for.",
+    "The content orchestration OS that creator-founders have been begging for. Stop managing chaos. Start dominating your niche.",
   openGraph: {
-    title: "ContentOS — AI-Powered Content Orchestration",
+    title: "BOMBON — The Sweet Spot for Content",
     description:
-      "Join the exclusive waitlist for ContentOS — the AI OS that content creators have been waiting for.",
+      "Analyze your voice, repurpose everything, and schedule with precision. Join the exclusive waitlist.",
     type: "website",
   },
 };
@@ -15,7 +15,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#020617] text-white antialiased">{children}</body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body
+        className="bg-[#0d0d0d] text-white antialiased"
+        style={{ fontFamily: "'Urbanist', sans-serif" }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
