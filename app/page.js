@@ -137,36 +137,40 @@ function Countdown() {
 // ── Social proof ──────────────────────────────────────────────────────────────
 function SocialProof() {
   const avatars = [
-    { bg: `linear-gradient(135deg,${NEON},${PURPLE})`,   init: "JK" },
-    { bg: `linear-gradient(135deg,${PURPLE},${PURPLE2})`, init: "AM" },
-    { bg: `linear-gradient(135deg,${PURPLE2},${NEON})`,   init: "SR" },
-    { bg: `linear-gradient(135deg,${NEON},#06b6d4)`,      init: "TL" },
-    { bg: `linear-gradient(135deg,${PURPLE},#ec4899)`,    init: "MC" },
+    { bg: `linear-gradient(135deg, ${PURPLE}, ${PURPLE2})`, init: "JK" },
+    { bg: `linear-gradient(135deg, ${PURPLE2}, ${PURPLE})`, init: "AM" },
+    { bg: `linear-gradient(135deg, ${PURPLE}, ${NEON}88)`,  init: "SR" },
+    { bg: `linear-gradient(135deg, ${PURPLE2}, ${NEON}66)`, init: "TL" },
+    { bg: `linear-gradient(135deg, ${PURPLE}, ${PURPLE2})`, init: "MC" },
   ];
 
   return (
-    <div className="flex items-center gap-2.5 justify-center mt-5">
+    <div className="flex items-center gap-3 justify-center mt-5">
       {/* Stacked avatars */}
       <div className="flex">
         {avatars.map((a, i) => (
           <div key={i} style={{
-            width: 28, height: 28, borderRadius: "50%",
+            width: 30, height: 30, borderRadius: "50%",
             background: a.bg,
-            border: "2px solid #0d0d0d",
+            border: `2px solid #0d0d0d`,
             display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: "8px", fontWeight: 700, color: "#fff",
-            marginLeft: i === 0 ? 0 : -8,
+            fontSize: "9px", fontWeight: 700, color: "#fff",
+            fontFamily: "'Urbanist', sans-serif",
+            marginLeft: i === 0 ? 0 : -9,
             position: "relative", zIndex: 10 - i,
+            boxShadow: `0 0 0 1px ${PURPLE}55`,
           }}>
             {a.init}
           </div>
         ))}
       </div>
       {/* Text */}
-      <p style={{ color: "#fff", fontSize: "14px", letterSpacing: "0.14px", fontFamily: "'Urbanist', sans-serif", fontWeight: 400 }}>
-        Be the Sweetest Spot: Join{" "}
-        <span style={{ color: "#fff", fontWeight: 700 }}>11,821+</span>
-        {" "}creator-founders already waiting.
+      <p style={{
+        color: "#FFFFFF", fontSize: "15px",
+        fontFamily: "'Urbanist', sans-serif",
+        fontWeight: 400, letterSpacing: "0px",
+      }}>
+        Join <span style={{ fontWeight: 700, color: "#FFFFFF" }}>11,821+</span> creators in the sweet spot.
       </p>
     </div>
   );
