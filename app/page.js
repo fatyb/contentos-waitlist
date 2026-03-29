@@ -220,16 +220,7 @@ function WaitlistForm() {
 
   return (
     <form ref={formRef} onSubmit={handleSubmit} className="w-full mt-7">
-      {/* Outer shadow layer — mimics Figma's blur bg */}
       <div style={{ position: "relative" }}>
-        <div style={{
-          position: "absolute", inset: 0,
-          background: "#141414",
-          borderRadius: "11px",
-          opacity: 0.3,
-          transform: "translateY(4px) scaleX(0.98)",
-          filter: "blur(6px)",
-        }} />
 
         {/* Main input row */}
         <div style={{
@@ -271,7 +262,7 @@ function WaitlistForm() {
               border: "1px solid transparent",
               color: "#fff",
               fontFamily: "'Urbanist', sans-serif",
-              fontWeight: 500, fontSize: "14px",
+              fontWeight: 700, fontSize: "14px",
               letterSpacing: "-0.13px", lineHeight: "24px",
               cursor: status === "loading" ? "not-allowed" : "pointer",
               opacity: status === "loading" ? 0.6 : 1,
@@ -416,7 +407,7 @@ export default function Home() {
             color: "#fff", fontSize: "12px", letterSpacing: "0.48px",
             fontFamily: "'Urbanist', sans-serif", fontWeight: 600,
           }}>
-            UNVEILING IN EARLY 2026
+            Coming to the sweet spot. 2026
           </span>
         </div>
 
