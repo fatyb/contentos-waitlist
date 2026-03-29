@@ -151,14 +151,13 @@ function SocialProof() {
         {avatars.map((a, i) => (
           <div key={i} style={{
             width: 30, height: 30, borderRadius: "50%",
-            background: a.bg,
-            border: `2px solid #0d0d0d`,
+            background: "#7333FF",
+            border: "none",
             display: "flex", alignItems: "center", justifyContent: "center",
             fontSize: "9px", fontWeight: 700, color: "#fff",
             fontFamily: "'Urbanist', sans-serif",
             marginLeft: i === 0 ? 0 : -9,
             position: "relative", zIndex: 10 - i,
-            boxShadow: `0 0 0 1px ${PURPLE}55`,
           }}>
             {a.init}
           </div>
@@ -258,8 +257,8 @@ function WaitlistForm() {
               margin: "6px",
               padding: "8px 18px",
               borderRadius: "9px",
-              background: "radial-gradient(50% 50% at 50% 75%, rgba(186,153,255,1) 16%, rgba(115,51,255,1) 80%)",
-              border: "1px solid transparent",
+              background: "#7333FF",
+              border: "none",
               color: "#fff",
               fontFamily: "'Urbanist', sans-serif",
               fontWeight: 700, fontSize: "14px",
