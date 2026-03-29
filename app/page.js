@@ -163,11 +163,10 @@ function SocialProof() {
         ))}
       </div>
       {/* Text */}
-      <p style={{ color: "#7e7e7e", fontSize: "14px", letterSpacing: "0.14px", fontFamily: "'Urbanist', sans-serif" }}>
+      <p style={{ color: "#fff", fontSize: "14px", letterSpacing: "0.14px", fontFamily: "'Urbanist', sans-serif", fontWeight: 400 }}>
         Be the Sweetest Spot: Join{" "}
-        <span style={{ color: "#7e7e7e" }}>11,821</span>
-        <span style={{ color: "#7e7e7e" }}> + </span>
-        <span style={{ color: "#7e7e7e" }}>creators already waiting.</span>
+        <span style={{ color: "#fff", fontWeight: 700 }}>11,821+</span>
+        {" "}creator-founders already waiting.
       </p>
     </div>
   );
@@ -276,7 +275,7 @@ function WaitlistForm() {
               transition: "opacity 0.2s",
             }}
           >
-            {status === "loading" ? "Joining…" : "Claim Your Early Access Now"}
+            {status === "loading" ? "Joining…" : "Join Wishlist"}
           </button>
         </div>
       </div>
@@ -284,8 +283,8 @@ function WaitlistForm() {
       {status === "error" && (
         <p style={{ color: "#f87171", fontSize: "12px", textAlign: "center", marginTop: "8px" }}>{msg}</p>
       )}
-      <p style={{ color: "#555", fontSize: "11px", textAlign: "center", marginTop: "8px", fontFamily: "'Urbanist', sans-serif" }}>
-        No spam. No fluff. Just early access to the sweetest spot in content.
+      <p style={{ color: "#fff", fontSize: "12px", textAlign: "center", marginTop: "8px", fontFamily: "'Urbanist', sans-serif", opacity: 0.5 }}>
+        No spam. Just early access to the sweetest spot in content strategy.
       </p>
     </form>
   );
@@ -347,8 +346,8 @@ function FAQItem({ q, a }) {
       }}>
         <p style={{
           padding: "0 16px 14px",
-          color: "#7e7e7e", fontSize: "13px",
-          lineHeight: "1.7", fontFamily: "'Urbanist', sans-serif",
+          color: "#fff", fontSize: "14px", opacity: 0.75,
+          lineHeight: "1.75", fontFamily: "'Urbanist', sans-serif",
         }}>
           {a}
         </p>
@@ -365,8 +364,9 @@ export default function Home() {
         width: "100%", minHeight: "100vh",
         background: "#0d0d0d",
         backgroundImage: `
-          radial-gradient(ellipse 80% 60% at 50% 0%, rgba(115,51,255,0.22) 0%, transparent 70%),
-          radial-gradient(ellipse 50% 40% at 50% 100%, rgba(115,51,255,0.08) 0%, transparent 70%)
+          radial-gradient(ellipse 90% 70% at 50% 10%, rgba(115,51,255,0.42) 0%, rgba(115,51,255,0.15) 40%, transparent 70%),
+          radial-gradient(ellipse 60% 50% at 50% 50%, rgba(132,120,240,0.12) 0%, transparent 65%),
+          radial-gradient(ellipse 50% 40% at 50% 100%, rgba(115,51,255,0.12) 0%, transparent 70%)
         `,
         display: "flex", flexDirection: "column",
         alignItems: "center",
@@ -378,7 +378,7 @@ export default function Home() {
       <section
         className="animate-fade-up"
         style={{
-          width: "100%", maxWidth: "448px",
+          width: "100%", maxWidth: "540px",
           display: "flex", flexDirection: "column", alignItems: "center",
           textAlign: "center",
         }}
@@ -421,34 +421,27 @@ export default function Home() {
           className="animate-fade-up delay-100"
           style={{
             fontFamily: "'Urbanist', sans-serif",
-            fontWeight: 800, fontSize: "40px",
-            letterSpacing: "-1.6px", lineHeight: "50px",
-            color: "#fff", marginBottom: "10px",
+            fontWeight: 800, fontSize: "52px",
+            letterSpacing: "-2px", lineHeight: "62px",
+            color: "#fff", marginBottom: "14px",
           }}
         >
           Every post, strategically perfected by{" "}
-          <span style={{
-            color: NEON,
-            textShadow: `0 0 18px rgba(215, 254, 3, 0.55), 0 0 40px rgba(215, 254, 3, 0.25)`,
-          }}>
-            bombon
-          </span>
-          .
+          <span style={{ color: NEON }}>bombon</span>.
         </h1>
 
         {/* Subhead */}
         <p
           className="animate-fade-up delay-200"
           style={{
-            color: "#7e7e7e", fontSize: "15px",
-            letterSpacing: "0.15px", lineHeight: "24px",
+            color: "#fff", fontSize: "18px",
+            letterSpacing: "0px", lineHeight: "28px",
             fontFamily: "'Urbanist', sans-serif",
+            fontWeight: 400,
             marginBottom: "4px",
           }}
         >
-          The content orchestration OS that creator-founders have been begging for.
-          Stop managing chaos. Start dominating your niche.
-          Analyze your voice, repurpose everything, and schedule with precision.
+          Stop managing chaos. Start leading your niche. Bombon transforms your past performance into future growth by generating trend-aligned ideas, providing strategic content refinements, and automating your deployment—all while preserving your unique perspective. It's the intelligent orchestration system built for high-impact dominance.
         </p>
 
         {/* Form */}
@@ -469,7 +462,7 @@ export default function Home() {
 
       {/* ── Divider ── */}
       <div style={{
-        width: "100%", maxWidth: "448px",
+        width: "100%", maxWidth: "540px",
         borderTop: "1px solid rgba(255,255,255,0.06)",
         margin: "52px 0",
       }} />
@@ -488,11 +481,8 @@ export default function Home() {
           }}>
             Frequently asked questions
           </h2>
-          <p style={{ color: "#7e7e7e", fontSize: "15px", letterSpacing: "0.15px", lineHeight: "24px", fontFamily: "'Urbanist', sans-serif" }}>
-            Everything you need to know about bombon. Find
-          </p>
-          <p style={{ color: "#7e7e7e", fontSize: "15px", letterSpacing: "0.15px", lineHeight: "24px", fontFamily: "'Urbanist', sans-serif" }}>
-            answers to the most common questions below.
+          <p style={{ color: "#fff", fontSize: "16px", letterSpacing: "0.15px", lineHeight: "26px", fontFamily: "'Urbanist', sans-serif", opacity: 0.6 }}>
+            Everything you need to know about bombon. Find answers to the most common questions below.
           </p>
         </div>
 
