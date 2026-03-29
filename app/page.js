@@ -51,36 +51,23 @@ function getTimeLeft() {
   };
 }
 
-// ── Logo — interwoven gradient triangle ───────────────────────────────────────
+// ── Logo — exact BOMBON SVG ───────────────────────────────────────────────────
 function BombonLogo() {
   return (
-    <svg width="67" height="67" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#clip0_bombon)">
+        <path d="M7.97294 43.7651C7.50446 45.0224 7.18834 46.6897 7.91785 48.2654C8.76367 50.0932 10.6342 51.1603 13.4559 51.4133L31.4154 53.0543L50.4217 60.4904C50.6302 60.5744 52.472 61.2685 54.3854 61.0409C55.7983 60.8729 56.9618 60.2338 57.7459 59.2066C58.4762 58.2341 58.8386 56.9704 58.8101 55.4391C58.9779 55.4277 59.1427 55.4202 59.3062 55.4008C62.0128 55.0788 63.2653 53.7801 63.8398 52.7467C64.7422 51.146 64.6334 49.1426 63.5449 46.7843L54.5719 27.4149L51.8644 10.0244C51.3974 7.01221 49.3284 3.94369 45.9068 4.3507C45.26 4.42764 44.5942 4.63631 43.9163 4.96037C42.939 3.68171 41.2737 2.17761 38.928 2.45665C37.2802 2.65266 35.7421 3.72815 34.3833 5.6714L23.3827 21.3296L7.81299 33.9594C7.47474 34.2361 4.50653 36.742 5.00224 39.9079C5.23754 41.4941 6.25711 42.7798 7.97614 43.763L7.97294 43.7651ZM42.3556 11.708L50.2429 28.7275L53.6302 50.5999L32.4408 48.6561L14.565 41.6672L26.6854 24.4222L42.3556 11.708ZM13.8588 46.9493C12.4772 46.8288 12.0203 46.4706 11.9793 46.3874C11.9147 46.2363 11.9727 45.8962 12.0938 45.5071L16.3842 47.1789L13.8588 46.9493ZM53.8507 56.5901C53.1817 56.6696 52.2947 56.4109 52.0492 56.321L47.4578 54.5279L54.3205 55.1548C54.3759 55.9544 54.2596 56.3843 54.1758 56.4927C54.1501 56.5234 54.0244 56.5694 53.8507 56.5901ZM59.4764 48.6615C60.1382 50.0882 59.9385 50.5573 59.931 50.5668C59.8868 50.6308 59.5508 50.8538 58.7745 50.9461C58.5703 50.9704 58.3871 50.9836 58.23 50.9833L57.0567 43.4422L59.4764 48.6615ZM47.4411 10.718L47.7443 12.6863L46.0112 8.92871C46.1475 8.87155 46.2893 8.82864 46.4344 8.80067C46.8055 8.75653 47.3108 9.95667 47.4411 10.718ZM38.052 8.25614C38.9429 6.97969 39.4456 6.90954 39.4558 6.90833C39.5988 6.89132 39.9496 7.1845 40.2945 7.60268L36.1143 10.9933L38.052 8.25614ZM10.6218 37.4423L13.9403 34.7463L10.2903 39.9383C9.62854 39.5855 9.42807 39.2934 9.41895 39.2168C9.36946 38.8877 9.99541 37.9674 10.6218 37.4423Z" fill="url(#paint0_bombon)"/>
+      </g>
       <defs>
-        <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%"   stopColor={NEON}   />
-          <stop offset="100%" stopColor={PURPLE}  />
+        <linearGradient id="paint0_bombon" x1="64.9651" y1="59.7824" x2="21.5001" y2="20.9303" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#7333FF"/>
+          <stop offset="0.4" stopColor="#8478F0"/>
+          <stop offset="1" stopColor="#C6E332"/>
         </linearGradient>
-        <linearGradient id="lg2" x1="100%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%"   stopColor={PURPLE}  />
-          <stop offset="100%" stopColor={PURPLE2} />
-        </linearGradient>
-        <linearGradient id="lg3" x1="50%" y1="0%" x2="50%" y2="100%">
-          <stop offset="0%"   stopColor={PURPLE2} />
-          <stop offset="100%" stopColor={NEON}    />
-        </linearGradient>
-        <filter id="glow">
-          <feGaussianBlur stdDeviation="1.2" result="blur"/>
-          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
+        <clipPath id="clip0_bombon">
+          <rect width="60" height="60" fill="white" transform="translate(66.6672 59.5799) rotate(173.216)"/>
+        </clipPath>
       </defs>
-      <path d="M28 6 L8 44 L20 44 L28 28 L36 44 L48 44 Z"
-        fill="none" stroke="url(#lg1)" strokeWidth="3.5"
-        strokeLinejoin="round" filter="url(#glow)" opacity="0.95"/>
-      <path d="M18 38 L28 20 L33 30" fill="none"
-        stroke="url(#lg2)" strokeWidth="3.5" strokeLinecap="round" filter="url(#glow)"/>
-      <path d="M38 38 L28 20 L23 30" fill="none"
-        stroke="url(#lg3)" strokeWidth="3.5" strokeLinecap="round" filter="url(#glow)"/>
-      <circle cx="28" cy="6" r="2.5" fill={NEON} opacity="0.9"/>
     </svg>
   );
 }
