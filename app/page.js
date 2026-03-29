@@ -434,14 +434,14 @@ export default function Home() {
         <p
           className="animate-fade-up delay-200"
           style={{
-            color: "#fff", fontSize: "18px",
-            letterSpacing: "0px", lineHeight: "28px",
+            color: "#FFFFFF", fontSize: "20px",
+            letterSpacing: "0px", lineHeight: "34px",
             fontFamily: "'Urbanist', sans-serif",
             fontWeight: 400,
             marginBottom: "4px",
           }}
         >
-          Stop managing chaos. Start leading your niche. Bombon transforms your past performance into future growth by generating trend-aligned ideas, providing strategic content refinements, and automating your deployment—all while preserving your unique perspective. It's the intelligent orchestration system built for high-impact dominance.
+          Turn your past performance into future dominance with trend-aligned ideas and strategic refinements. Bombon orchestrates your entire content workflow, transforming unique perspectives into high-impact growth.
         </p>
 
         {/* Form */}
