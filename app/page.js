@@ -12,28 +12,28 @@ const PURPLE2 = "#8478F0";
 const FAQ_DATA = [
   {
     id: 1,
-    q: "Will my content sound robotic?",
-    a: "Never. BOMBON is trained on YOUR voice first. Before generating a single word, it builds a deep tonal fingerprint from your existing content — your slang, your rhythm, your hot takes. The output sounds like the best version of you, not a chatbot.",
+    q: "What exactly is bombon?",
+    a: "bombon is a strategic content orchestration system built for creator-founders. It's more than just a scheduler; it's an intelligent partner that studies your past successes, identifies high-potential trends, and helps you craft impactful posts that capture your unique perspective—saving you hours of guesswork.",
   },
   {
     id: 2,
-    q: "Is this just another scheduler?",
-    a: "Absolutely not. Schedulers move content. BOMBON orchestrates it. We analyze performance data, identify what resonates with your audience, repurpose your top content into new formats, and then schedule it — all autonomously.",
+    q: "How does bombon ensure my content remains authentic?",
+    a: "Unlike generic tools, bombon is built to stay invisible. It doesn't write for you; it thinks with you. By analyzing your unique style, it acts as a strategic mirror that reflects your true voice—ensuring every post feels 100% human and personal.",
   },
   {
     id: 3,
-    q: "How does BOMBON handle repurposing?",
-    a: "Drop in a YouTube video, a podcast, a long-form article — BOMBON extracts core ideas, reformats them into threads, carousels, newsletters, and short-form scripts, and adapts the tone for each platform. One piece of content becomes ten. Automatically.",
+    q: "Can I use my own previous posts to train the system?",
+    a: "Absolutely. bombon is designed to ingest your successful history to mirror your unique \"Voice DNA\" perfectly.",
   },
   {
     id: 4,
-    q: "Which platforms are supported at launch?",
-    a: "Twitter/X, LinkedIn, Instagram, TikTok (scripts), YouTube (descriptions + community posts), and newsletters via Beehiiv or ConvertKit. We're adding more based on what the waitlist votes for.",
+    q: "How does the trend-syncing feature work?",
+    a: "Our engine monitors real-time shifts in your industry and suggests content angles that bridge your expertise with what's currently relevant.",
   },
   {
     id: 5,
-    q: "How much will the sweet spot cost?",
-    a: "Pricing is being finalized, but waitlist members lock in a founding rate — up to 45% off, forever. You'll be notified before we go public. Early birds eat well here.",
+    q: "Which platforms does bombon support for deployment?",
+    a: "Currently, we support LinkedIn, X (Twitter), and Instagram, with more platforms being added based on user feedback.",
   },
 ];
 
@@ -99,14 +99,14 @@ function Countdown() {
             <div className="flex flex-col items-center">
               <span style={{
                 color: "#fff", fontSize: "18px", lineHeight: "21px",
-                fontFamily: "'Inter', sans-serif", fontWeight: 400,
+                fontFamily: "'Urbanist', sans-serif", fontWeight: 400,
                 minWidth: "22px", textAlign: "center",
               }}>
                 {pad(item.val)}
               </span>
               <span style={{
                 color: "#7e7e7e", fontSize: "11px", lineHeight: "11px",
-                marginTop: "8px", fontFamily: "'Inter', sans-serif",
+                marginTop: "8px", fontFamily: "'Urbanist', sans-serif",
                 letterSpacing: "0px",
               }}>
                 {item.label}
@@ -125,7 +125,7 @@ function Countdown() {
         </svg>
         <span style={{
           color: "#fff", fontSize: "12px", letterSpacing: "0.48px",
-          fontFamily: "'Inter', sans-serif", fontWeight: 500,
+          fontFamily: "'Urbanist', sans-serif", fontWeight: 500,
         }}>
           LEFT UNTIL FULL RELEASE
         </span>
@@ -163,7 +163,7 @@ function SocialProof() {
         ))}
       </div>
       {/* Text */}
-      <p style={{ color: "#7e7e7e", fontSize: "14px", letterSpacing: "0.14px", fontFamily: "'Inter', sans-serif" }}>
+      <p style={{ color: "#7e7e7e", fontSize: "14px", letterSpacing: "0.14px", fontFamily: "'Urbanist', sans-serif" }}>
         Be the Sweetest Spot: Join{" "}
         <span style={{ color: "#7e7e7e" }}>11,821</span>
         <span style={{ color: "#7e7e7e" }}> + </span>
@@ -204,7 +204,7 @@ function WaitlistForm() {
           boxShadow: `inset 0 1px 0 #ffffff12, 0 0 20px ${NEON}22`,
           padding: "18px 20px", textAlign: "center",
         }}>
-          <p style={{ color: "#fff", fontWeight: 600, fontSize: "14px", fontFamily: "'Geist', 'Inter', sans-serif" }}>
+          <p style={{ color: "#fff", fontWeight: 600, fontSize: "14px", fontFamily: "'Urbanist', sans-serif" }}>
             🎉 {msg}
           </p>
           <p style={{ color: "#7e7e7e", fontSize: "13px", marginTop: "4px" }}>
@@ -254,7 +254,7 @@ function WaitlistForm() {
               flex: 1, background: "transparent", border: "none", outline: "none",
               padding: "12px 16px",
               color: "#7e7e7e", fontSize: "15px",
-              fontFamily: "'Inter', sans-serif", letterSpacing: "0.15px",
+              fontFamily: "'Urbanist', sans-serif", letterSpacing: "0.15px",
             }}
           />
           <button
@@ -267,7 +267,7 @@ function WaitlistForm() {
               background: "radial-gradient(50% 50% at 50% 75%, rgba(186,153,255,1) 16%, rgba(115,51,255,1) 80%)",
               border: "1px solid transparent",
               color: "#fff",
-              fontFamily: "'Geist', 'Inter', sans-serif",
+              fontFamily: "'Urbanist', sans-serif",
               fontWeight: 500, fontSize: "14px",
               letterSpacing: "-0.13px", lineHeight: "24px",
               cursor: status === "loading" ? "not-allowed" : "pointer",
@@ -284,7 +284,7 @@ function WaitlistForm() {
       {status === "error" && (
         <p style={{ color: "#f87171", fontSize: "12px", textAlign: "center", marginTop: "8px" }}>{msg}</p>
       )}
-      <p style={{ color: "#555", fontSize: "11px", textAlign: "center", marginTop: "8px", fontFamily: "'Inter', sans-serif" }}>
+      <p style={{ color: "#555", fontSize: "11px", textAlign: "center", marginTop: "8px", fontFamily: "'Urbanist', sans-serif" }}>
         No spam. No fluff. Just early access to the sweetest spot in content.
       </p>
     </form>
@@ -316,7 +316,7 @@ function FAQItem({ q, a }) {
       }}>
         <span style={{
           color: "#fff", fontSize: "15px",
-          fontFamily: "'Inter', sans-serif",
+          fontFamily: "'Urbanist', sans-serif",
           letterSpacing: "0.15px", lineHeight: "24px",
           fontWeight: 400,
         }}>
@@ -348,7 +348,7 @@ function FAQItem({ q, a }) {
         <p style={{
           padding: "0 16px 14px",
           color: "#7e7e7e", fontSize: "13px",
-          lineHeight: "1.7", fontFamily: "'Inter', sans-serif",
+          lineHeight: "1.7", fontFamily: "'Urbanist', sans-serif",
         }}>
           {a}
         </p>
@@ -410,7 +410,7 @@ export default function Home() {
           </span>
           <span style={{
             color: "#fff", fontSize: "12px", letterSpacing: "0.48px",
-            fontFamily: "'Inter', sans-serif", fontWeight: 500,
+            fontFamily: "'Urbanist', sans-serif", fontWeight: 600,
           }}>
             UNVEILING IN EARLY 2026
           </span>
@@ -420,22 +420,20 @@ export default function Home() {
         <h1
           className="animate-fade-up delay-100"
           style={{
-            fontFamily: "'Geist', 'Inter', sans-serif",
-            fontWeight: 500, fontSize: "40px",
-            letterSpacing: "-1.6px", lineHeight: "48px",
+            fontFamily: "'Urbanist', sans-serif",
+            fontWeight: 800, fontSize: "40px",
+            letterSpacing: "-1.6px", lineHeight: "50px",
             color: "#fff", marginBottom: "10px",
           }}
         >
-          Your Content.{" "}
+          Every post, strategically perfected by{" "}
           <span style={{
-            background: `linear-gradient(90deg, ${NEON}, ${PURPLE2})`,
-            WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+            color: NEON,
+            textShadow: `0 0 18px rgba(215, 254, 3, 0.55), 0 0 40px rgba(215, 254, 3, 0.25)`,
           }}>
-            Perfected, Mapped,
+            bombon
           </span>
-          {" "}and Deployed.{" "}
-          <br />
-          <span style={{ color: NEON }}>That's BOMBON.</span>
+          .
         </h1>
 
         {/* Subhead */}
@@ -444,7 +442,7 @@ export default function Home() {
           style={{
             color: "#7e7e7e", fontSize: "15px",
             letterSpacing: "0.15px", lineHeight: "24px",
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "'Urbanist', sans-serif",
             marginBottom: "4px",
           }}
         >
@@ -484,16 +482,16 @@ export default function Home() {
         {/* FAQ heading */}
         <div style={{ textAlign: "center", marginBottom: "28px" }}>
           <h2 style={{
-            fontFamily: "'Inter', sans-serif", fontWeight: 500,
+            fontFamily: "'Urbanist', sans-serif", fontWeight: 800,
             fontSize: "28px", letterSpacing: "-0.56px", lineHeight: "39.2px",
             color: "#fff", marginBottom: "6px",
           }}>
             Frequently asked questions
           </h2>
-          <p style={{ color: "#7e7e7e", fontSize: "15px", letterSpacing: "0.15px", lineHeight: "24px" }}>
-            Everything you need to know about the sweet spot. Find
+          <p style={{ color: "#7e7e7e", fontSize: "15px", letterSpacing: "0.15px", lineHeight: "24px", fontFamily: "'Urbanist', sans-serif" }}>
+            Everything you need to know about bombon. Find
           </p>
-          <p style={{ color: "#7e7e7e", fontSize: "15px", letterSpacing: "0.15px", lineHeight: "24px" }}>
+          <p style={{ color: "#7e7e7e", fontSize: "15px", letterSpacing: "0.15px", lineHeight: "24px", fontFamily: "'Urbanist', sans-serif" }}>
             answers to the most common questions below.
           </p>
         </div>
@@ -510,9 +508,9 @@ export default function Home() {
       <footer style={{
         marginTop: "52px", color: "#555",
         fontSize: "12px", textAlign: "center",
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "'Urbanist', sans-serif",
       }}>
-        © {new Date().getFullYear()} BOMBON.{" "}
+        © {new Date().getFullYear()} bombon.{" "}
         <span style={{ color: NEON }}>The sweet spot for content.</span>
       </footer>
 
